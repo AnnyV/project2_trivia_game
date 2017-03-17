@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Trivia App</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+</head>
+
+<body>
+  <!-- main page trivia game -->
+  <img src="assets/images/FlagTemplate.jpg" class="flag-template" alt="U.S. Flag Template" />
+  <div class="game-container">
+    <div class="countdown">
+    </div>
+    <img src="assets/images/usaTrivia.png" class="trivia-logo" alt="U.S. Trivia Logo" />
+    <div id="score"></div>
+    <div id="trivia">
+    </div>
+  </div>
+  <!-- <div class="modal-dialog modal-lg">
+ -->
+
+    <!-- Modal content-->
+    <!-- <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title"><strong>Sign Up Form</strong></h2>
+      </div>
+      <div class="modal-body">
+        <h2>Sign up Form</h2>
+        <form action="/action_page.php" style="border:1px solid #ccc">
+          <div class="container">
+            <label><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <input type="checkbox" checked="checked"> Remember me
+            <p>By creating an account you agree to our <a href="#">Terms &amp; Privacy</a>.</p>
+            <div class="clearfix">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div> -->
+  <div id="go" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Welcome to Civic Trivia App</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2>Login Form</h2>
+          <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default btn-danger btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <p>Not a member? <a href="HELP">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="assets/js/project2.js"></script>
+
+</body>
+
+</html>
