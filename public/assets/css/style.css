@@ -4,6 +4,19 @@
 	left: 0px;
 }
 
+body {
+	background-image: url("/assets/images/FlagTemplate.jpg");
+	/*background-repeat: no-repeat;*/
+}
+
+.login-container {
+position: absolute;
+    top: 215px;
+    left: 616px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
 .trivia-logo {
 	width: 200px;
 	margin-right: auto;
@@ -70,4 +83,31 @@
 	color: darkred;
 	font-family: 'Merriweather', serif;
 	font-weight: bold; 
+}
+.create-update-form {
+    background-color: beige;
+    padding: 50px;
+    font-size: large;
+    margin: 20px;
+    position: absolute;
+     top: 248px;
+    left: 470px;
+    border: 10px solid;
+    font-family: 'Merriweather', serif;
+    color: rgb(38, 42, 67);
+}
+
+.scores-container {
+	    background-color: beige;
+    padding: 50px;
+    font-size: large;
+    margin: 20px;
+    border: 10px solid;
+    font-family: 'Merriweather', serif;
+    color: rgb(38, 42, 67);
+    display: inline-block;
+}
+button, input, select, textarea {
+   
+    background-color: #a94442;
 }

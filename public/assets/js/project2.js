@@ -1,5 +1,5 @@
-$('#signupbtn').modal('toggle');
-$('#go').modal('toggle');
+// $('#signupbtn').modal('toggle');
+// $('#go').modal('toggle');
 
 // <!-- create a trivia game about citizenship
 // start the game
@@ -523,9 +523,9 @@ $(document).ready(function() {
             method: "POST",
             data: data
           }).done(function(response) {
-            window.location = "/scores"
+            // window.location = "/scores"
           });
-        
+      
           triviaGame.score = 0;
         triviaGame.gameOver();
 

@@ -2,43 +2,42 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-		<link rel="stylesheet" href="../../public/assets/css/style.css" type="text/css" />
-		<title>Game</title>
+		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+		<title>Trivia App</title>
 	</head>
 	<body>
-	<div class="container">
-        <div class="row">
-			<div class="col-md-6 col-md-offset-3">
-				<div class="panel panel-login">
-					<div class="panel-heading">
-						<div class="row">
-							<div class="col-xs-6">
-								<a href="#" class="active" id="login-form-link">Login</a>
-							</div>
-							<div class="col-xs-6">
-								<a href="#" id="register-form-link">Register</a>
-							</div>
-						</div>
-						<hr>
-					</div>
-					<div class="panel-body">
-					{{#if logged_in}}
-			<a href="/users/sign-out" id="sign-out">Sign Out ({{this.username}})</a> | <a href="/scores">RPS</a> | <a href="/scores/hangman">Hangman</a> | <a href="/scores/quiz">Quiz</a>
+	<!-- <img src="/assets/images/FlagTemplate.jpg" class="flag-template" alt="U.S. Flag Template" /> -->
+	<img src="/assets/images/usaTrivia.png" class="trivia-logo" alt="U.S. Trivia Logo" />
+		
+		{{{ body }}}
+		<div class="login-container">
+			{{#if logged_in}}
+			<a href="/users/sign-out" id="sign-out">Sign Out ({{this.username}})</a> | <a href="/scores/project2.js">Trivia</a>
 
-			<p class="clear"><strong>logged_in:</strong> {{logged_in}} |
+			<!-- <p class="clear"><strong>logged_in:</strong> {{logged_in}} |
 			<strong>user_email:</strong> {{user_email}} |
 			<strong>user_id:</strong> {{user_id}} |
-			<strong>username:</strong> {{username}}</p>
+			<strong>username:</strong> {{username}}</p> -->
 		{{else}}
 			<a href="/users/sign-in">Sign In</a>
 			<a href="/users/new">Register</a>
 		{{/if}}
-		
-		{{{ body }}}
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js"integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
-		<script src="/assets/project2.js"></script>
+						
+	</div>	
+	<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+		<script src="/assets/js/project2.js"></script> -->
 		<!-- <script src="/assets/js/hangman.js"></script>
 		<script src="/assets/js/quiz.js"></script> -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/assets/js/project2.js"></script>
+
 	</body>
 
 </html>

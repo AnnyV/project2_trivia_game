@@ -11,7 +11,7 @@ var connection = require('../config/connection.js')
 	//insert a score
 
 router.get('/', function(req,res) {
-	var query = "SELECT * FROM scores ORDER BY score DESC"
+	var query = "SELECT * FROM scores ORDER BY score DESC LIMIT 10"
 
 	connection.query(query, function(err, scores) {
 		res.render('scores/index', {

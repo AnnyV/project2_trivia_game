@@ -1,9 +1,11 @@
 {{#if logged_in}}
-	{{> trivia}}
+	{{> game}}
 {{/if}}
 
+<div class="scores-container">
 <div>	
 	{{#each scores}}
-		<p>Score: {{total_score}} by User: {{user_id}}</p>
+		<p>Score: {{score}} by User: {{user_id}}</p>
 	{{/each}}
+</div>
 </div>
